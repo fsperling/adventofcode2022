@@ -27,30 +27,30 @@ func main() {
     if match[0] == "A" && match[1] == "Y" ||
       match[0] == "B" && match[1] == "X" ||
       match[0] == "C" && match[1] == "Z" {
-      score = score + 1
+      score += 1
     }
  
     // Paper
     if match[0] == "A" && match[1] == "Z" ||
       match[0] == "B" && match[1] == "Y" ||
       match[0] == "C" && match[1] == "X" {
-      score = score + 2
+      score += 2
     }
 
     // Scissor
     if match[0] == "A" && match[1] == "X" ||
       match[0] == "B" && match[1] == "Z" ||
       match[0] == "C" && match[1] == "Y" {
-      score = score + 3
+      score += 3
     }
     
     switch match[1] {
     case "X":
-      score = score + 0
+      score += 0
     case "Y":
-      score = score + 3
+      score += 3
     case "Z":
-      score = score + 6
+      score += 6
     }
     totalScore = totalScore + score
   }

@@ -28,23 +28,23 @@ func main() {
     if match[0] == "A" && match[1] == "X" ||
       match[0] == "B" && match[1] == "Y" ||
       match[0] == "C" && match[1] == "Z" {
-      score = score + 3
+      score += 3
     }
  
     // Wins
     if match[0] == "A" && match[1] == "Y" ||
       match[0] == "B" && match[1] == "Z" ||
       match[0] == "C" && match[1] == "X" {
-      score = score + 6
+      score += 6
     }
 
     switch match[1] {
     case "X":
-      score = score + 1
+      score += 1
     case "Y":
-      score = score + 2
+      score += 2
     case "Z":
-      score = score + 3
+      score += 3
     }
     totalScore = totalScore + score
   }
