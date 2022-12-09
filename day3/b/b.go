@@ -22,13 +22,10 @@ func main() {
 
   for fileScanner.Scan() {
     var backpack1 = strings.Split(fileScanner.Text(), "")
-    //fmt.Printf("%v", backpack1)
     fileScanner.Scan()
     var backpack2 = strings.Split(fileScanner.Text(), "")
-    //fmt.Printf("%v", backpack2)
     fileScanner.Scan()
     var backpack3 = strings.Split(fileScanner.Text(), "")
-    //fmt.Printf("%v", backpack3)
 
     // put first two arrays in a map each
     first := make(map[string]int)
