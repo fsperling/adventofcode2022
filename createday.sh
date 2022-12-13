@@ -2,7 +2,8 @@
 
 number=$1
 
-mkdir "day${1}/{a,b}"
+mkdir -p "day${1}/a"
+mkdir -p "day${1}/b"
 cd "day${1}"
 echo "https://adventofcode.com/2022/day/${number}" > README.md
 touch a/a.go
